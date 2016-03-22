@@ -12,8 +12,22 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'fullname', 'username', 'email', 'password', 'provider_id', 'provider',
-        'avatar', 'gender', 'location', 'website', 'oauth_token', 'oauth_token_secret'
+        'first_name',
+        'last_name',
+        'username', 
+        'email', 
+        'password', 
+        'provider_id', 
+        'provider',
+        'oauth_token', 
+        'oauth_token_secret',
+        'avatar', 
+        'gender', 
+        'location', 
+        'website',
+        'org_name',
+        'org_designation',
+        'phone'
     ];
 
     /**
@@ -42,5 +56,10 @@ class User extends Authenticatable
     public function getAccessTokenSecret()
     {
         return $this->oauth_token_secret;
+    }
+
+    public function alums()
+    {
+        return $this->hasMany("App\Alum");
     }
 }
