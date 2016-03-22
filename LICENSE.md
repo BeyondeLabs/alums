@@ -1,4 +1,4 @@
-# The MIT License (MIT)
+# Laravel Stater Kit: The MIT License (MIT)
 
 Copyright (c) 2015 Prosper Otemuyiwa <prosperotemuyiwa@gmail.com>
 
